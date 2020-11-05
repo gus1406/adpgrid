@@ -7,14 +7,6 @@
  *
  */
 
-require 'update-checker/plugin-update-checker.php';
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-    'https://github.com/gus1406/adpgrid.git',
-    __FILE__,
-    'adpgrid'
-);
-$myUpdateChecker->getVcsApi()->enableReleaseAssets();
-
 /**
  * Including script dan style
  * The basic function for enqueuing a style is : wp_enqueue_style( $handle, $src, $deps, $ver, $media );
